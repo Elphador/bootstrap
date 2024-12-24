@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    transition: background-color 0.4s ease, color 0.4s ease; 
+}
+body {
+    background-color: #121212; 
+    color: #f7f7f7; 
+}
+.navc nav {
+    background-color: #1d1f2b;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+.navc a {
+    color: #e0e0e0;
+    font-weight: 600;
+    padding: 8px 15px;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+.navc a:hover {
+    color: #ff9800;
+}
+.card {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(138, 0, 255, 0.2);
+    transition: box-shadow 0.4s ease;
+}
+.card:hover {
+    box-shadow: 0 8px 40px rgba(138, 0, 255, 0.3);
+}
+.container {
+    max-width: 1200px;
+}
+.text-light h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #f8f9fa;
+}
+.text-light p {
+    font-size: 1.2rem;
+    color: #f8f9fa;
+}
+.btn-light {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+.btn-light:hover {
+    background-color: #ff9800;
+}
+.carousel-item img {
+    max-height: 400px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    transition: transform 0.5s ease; 
+}
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    transition: transform 0.5s ease;
+}
+footer {
+    background-color: #1d1f2b;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 15px 0;
+}
+.btn-cyberwave {
+    background-color: #8a00ff;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-cyberwave:hover {
+    background-color: #ff0099;
+    transform: scale(1.05);
+}
+.text-cyberwave {
+    color: #8a00ff;
+    transition: color 0.3s ease;
+}
+.text-cyberwave:hover {
+    color: #ff0099;
+}
+
+.form-label {
+    color: #f5f5f5;
+    font-weight: 500;
+}
+.form-control {
+    background-color: #2c2f38;
+    border: 1px solid #333;
+    color: #f5f5f5;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    background-color: #3d424b;
+    border-color: #ff0099;
+}
+@media (max-width: 768px) {
+    .carousel-item img {
+        max-height: 300px; 
+    }
+    .text-light h1 {
+        font-size: 2.5rem;
+    }
+    .text-light p {
+        font-size: 1rem;
+    }
+}
